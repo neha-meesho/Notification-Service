@@ -1,7 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.models.SmsRequest;
-import com.example.demo.producer.MessageProducer;
+import com.example.demo.kafka.producer.MessageProducer;
 import com.example.demo.repository.SmsRequestRepository;
 import com.example.demo.rest.exceptionHandling.ValidationException;
 import com.example.demo.rest.services.SmsRequestService;

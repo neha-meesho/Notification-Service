@@ -37,7 +37,7 @@ public class EsController {
     public ResponseEntity<String> sendSms(@RequestBody @Valid EsSmsRequest esModel){
         long date = new Date().getTime();
         esModel.setCreatedAt(date);
-        esService.save(esModel);
+
         return ResponseEntity.ok("sms saved in es");
     }
 

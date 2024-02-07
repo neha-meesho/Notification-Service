@@ -1,4 +1,4 @@
-package com.example.demo.producer;
+package com.example.demo.kafka.producer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

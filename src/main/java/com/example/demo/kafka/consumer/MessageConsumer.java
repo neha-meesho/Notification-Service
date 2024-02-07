@@ -1,4 +1,4 @@
-package com.example.demo.consumer;
+package com.example.demo.kafka.consumer;
 
 import com.example.demo.models.EsSmsRequest;
 import com.example.demo.repository.EsRepository;

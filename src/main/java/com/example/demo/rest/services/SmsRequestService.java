@@ -1,7 +1,7 @@
 package com.example.demo.rest.services;
 
 
-import com.example.demo.producer.MessageProducer;
+import com.example.demo.kafka.producer.MessageProducer;
 import com.example.demo.repository.SmsRequestRepository;
 import com.example.demo.models.SmsRequest;
 import com.example.demo.rest.exceptionHandling.ValidationException;
@@ -10,8 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
-import java.util.OptionalInt;
 
 @Service
 public class SmsRequestService {

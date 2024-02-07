@@ -1,7 +1,7 @@
 package com.example.demo.rest.controllers;
 
 import com.example.demo.models.SmsRequest;
-import com.example.demo.producer.MessageProducer;
+import com.example.demo.kafka.producer.MessageProducer;
 import com.example.demo.rest.exceptionHandling.ErrorResponse;
 import com.example.demo.rest.services.SmsRequestService;
 import com.example.demo.rest.exceptionHandling.ValidationException;
@@ -48,7 +48,7 @@ public class SmsRequestController {
             throw new ValidationException("phone_number is mandatory");
         }
         SmsRequest newSms = smsRequestService.addSmsRequest(smsRequest);
-//        messageProducer.sendMessage("send_sms",String.valueOf(newSms.getId()));
+//
         return ResponseEntity.ok(Map.of("data", Map.of("requestId", newSms.getId(), "comments", "Successfully Sent")));
 
 
