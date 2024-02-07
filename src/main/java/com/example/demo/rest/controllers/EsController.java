@@ -30,9 +30,6 @@ public class EsController {
     @Autowired
     EsService esService;
 
-
-
-
     @PostMapping
     public ResponseEntity<String> sendSms(@RequestBody @Valid EsSmsRequest esModel){
         long date = new Date().getTime();

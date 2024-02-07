@@ -1,6 +1,6 @@
 package com.example.demo.rest.controllers;
 
-import com.example.demo.rest.BlacklistRequest;
+import com.example.demo.models.BlacklistRequest;
 import com.example.demo.rest.services.BlacklistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

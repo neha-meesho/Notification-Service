@@ -1,4 +1,4 @@
-package com.example.demo.rest;
+package com.example.demo.models;
 
 import java.util.Set;
 
